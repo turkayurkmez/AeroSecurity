@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<h2>Bu sayfayı görebilirsiniz.</h2>
+@if (User.Identity.IsAuthenticated)
+{
+    <p>Hoşgeldin @User.Identity.Name</p>
+    <a href="/Home/Logout">Çıkış Yap</a>
+}
+else
+{
+    <a href="/Home/Login">Giriş Yap</a>
+}
+

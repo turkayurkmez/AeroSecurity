@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewData["Title"] = "Yasak";
+}
+
+<h1>Yasak</h1>
+@if (User.Identity.IsAuthenticated)
+{
+    <p>Hoşgeldin @User.Identity.Name</p>
+}
