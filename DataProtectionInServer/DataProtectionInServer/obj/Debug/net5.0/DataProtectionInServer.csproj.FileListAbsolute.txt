@@ -24,8 +24,8 @@ C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataPro
 C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\obj\Debug\net5.0\staticwebassets\DataProtectionInServer.StaticWebAssets.xml
 C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\obj\Debug\net5.0\scopedcss\bundle\DataProtectionInServer.styles.css
 C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\obj\Debug\net5.0\DataProtectionInServer.RazorTargetAssemblyInfo.cache
-C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\obj\Debug\net5.0\DataProtectionInServer.csproj.CopyComplete
 C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\obj\Debug\net5.0\DataProtectionInServer.dll
 C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\obj\Debug\net5.0\ref\DataProtectionInServer.dll
 C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\obj\Debug\net5.0\DataProtectionInServer.pdb
 C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\obj\Debug\net5.0\DataProtectionInServer.genruntimeconfig.cache
+C:\Users\turka\source\repos\Kurumsal\Antalya-Aero\DataProtectionInServer\DataProtectionInServer\bin\Debug\net5.0\BCrypt.Net-Core.dll
