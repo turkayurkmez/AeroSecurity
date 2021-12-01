@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <button id="btn">Hava durumu getir</button>
+    <div id="havaDurumu"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $('#btn').on('click',function () {
+               let credential = 'turkay:123';
+               $.ajax({
+                   url:'https://localhost:44349/WeatherForecast',
+                   type:'GET',
+                   contentType:'application/json',
+                   headers:{
+                       'Authorization':'Basic '+btoa(credential)
+                       //'Authorization':'Kamil '+ btoa(androidValue)
+                   },
+                   success:function(data){
+                          console.log(data);
+                   },
+                   error:function name(err) {
+                       console.log(err);
+                   }
+
+               });
+           });
+        });
+    </script>
+</div>

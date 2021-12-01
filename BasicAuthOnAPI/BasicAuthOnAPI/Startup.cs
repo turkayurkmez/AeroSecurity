@@ -29,7 +29,7 @@ namespace BasicAuthOnAPI
         {
 
             services.AddAuthentication("Basic")
-                    .AddScheme<BasicAuthenticationOption, BasicAuthenticationHandler>("Basic",null);
+                    .AddScheme<BasicAuthenticationOption, BasicAuthenticationHandler>("Basic", null);
 
 
             services.AddControllers();
@@ -41,7 +41,7 @@ namespace BasicAuthOnAPI
             /*CORS: Cross Origin Resource Sharing*/
             services.AddCors(option => option.AddPolicy("allow", cp =>
             {
-                cp.AllowAnyOrigin();
+                cp.WithOrigins("https://localhost:44367");
                 cp.AllowAnyMethod();
                 cp.AllowAnyHeader();
             }));
@@ -63,9 +63,9 @@ namespace BasicAuthOnAPI
             app.UseRouting();
 
             app.UseCors("allow");
-
             app.UseAuthentication();
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {
