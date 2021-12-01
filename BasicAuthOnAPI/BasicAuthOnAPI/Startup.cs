@@ -33,6 +33,7 @@ namespace BasicAuthOnAPI
 
 
             services.AddControllers();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BasicAuthOnAPI", Version = "v1" });
@@ -41,7 +42,7 @@ namespace BasicAuthOnAPI
             /*CORS: Cross Origin Resource Sharing*/
             services.AddCors(option => option.AddPolicy("allow", cp =>
             {
-                cp.WithOrigins("https://localhost:44367");
+                cp.WithOrigins("https://127.1.1:44367");
                 cp.AllowAnyMethod();
                 cp.AllowAnyHeader();
             }));
@@ -62,6 +63,10 @@ namespace BasicAuthOnAPI
 
             app.UseRouting();
 
+            //app.Use((context) =>
+            //{
+
+            //})
             app.UseCors("allow");
             app.UseAuthentication();
             app.UseAuthorization();
